@@ -284,7 +284,7 @@ class FaceDetector(object):
 
               
             for box in blur_boxes:
-              times.append({'time_start:':str(t/25),'time_end':str((t+1)/25),'corner_1':[str(1920-box[0]),str(1080-box[3])],'corner_2':[str(1920-box[1]),str(1080-box[4])]})
+              times.append({'time_start:':str(t/25),'time_end':str((t+1)/25),'corner_1':[str(1920-box[0]),str(1080-box[2])],'corner_2':[str(1920-box[1]),str(1080-box[3])]})
 
             frame = self._blur(frame,blur_boxes)
             #frame = self._draw(frame, boxes, probs, landmarks)
